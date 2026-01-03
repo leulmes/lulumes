@@ -1,4 +1,4 @@
-baseURL = 'https://leulmes.github.io/lulumes/'
+baseURL = 'https://leulmes.github.io/'
 languageCode = 'en-us'
 title = "Leul Mesfin"
 theme = 'nostyleplease'
