@@ -1,0 +1,23 @@
+{{ define "main" }}
+<main class="page-content" aria-label="Content">
+  <div class="w">
+    <header>
+      <h1>{{ .Site.Title }}</h1>
+    </header>
+
+    <ul>
+      {{ range (where .Site.RegularPages "Section" "posts") }}
+      <li>
+        <span>{{ .Date.Format "2006-01-02" }}</span>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+      {{ end }}
+    </ul>
+
+    <div class="social-links">
+      <li><a href="https://github.com/leulmes" target="_blank" rel="noopener noreferrer">github</a></li>
+      <li><a href="https://www.linkedin.com/in/leul-mesfin" target="_blank" rel="noopener noreferrer">linkedin</a></li>
+    </div>
+  </div>
+</main>
+{{ end }}
